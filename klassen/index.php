@@ -2,7 +2,8 @@
 
     require_once('ConnectionPDO.php');
 
-    /* PDO Objekt erstellen über eine Gesonderte Funktion */
+    /* Connection PDO instanz erzeugen um dann auf die Methoden der Klasse "Connection PDO"
+        erfolreich zugreifen zu können. */
 
     $pdo = new ConnectionPDO([
             'host' => '127.0.0.1:3306', // Host IP der Datenbank 
@@ -12,7 +13,7 @@
 
 
     /*    var_dump ist eine Native PHP Funktion um Variablen auszuwerten
-    *     SelectUser() Function dort drinnen befindet sich ein Prepared Statement für Select Statements 
+    *     SelectUser() Methode dort drinnen befindet sich ein Prepared Statement für Select Statements 
     *     Es werden alle User mit der PersonalID 0 Aussgegeben als Assozativer Array
     */
 
