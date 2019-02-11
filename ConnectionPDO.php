@@ -31,7 +31,7 @@
 
     }
 
-    function SelectUser(PDO $pdo,int $id)
+    function SelectUser(PDO $pdo,int $id):array
     {
         /**
          *  Prepared Statment um SQL Injections zu Verhindern, 
@@ -46,7 +46,7 @@
         if($result){
             $result = $statement->fetchAll(PDO::FETCH_ASSOC);
         }else{
-            $result = 'Not Found';
+            $result = ['Not Found'];
         }
 
         
