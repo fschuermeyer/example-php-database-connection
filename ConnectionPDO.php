@@ -34,7 +34,7 @@
     function SelectUser(PDO $pdo,int $id)
     {
         /**
-         *  Prepared Statment um SQL Exception zu Verhindern, 
+         *  Prepared Statment um SQL Injections zu Verhindern, 
          *  zusätzlich kann noch ein Vorheriges Escaping Stattfinden.
          * 
          *  Das Escaping passiert in der e() Function
